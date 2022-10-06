@@ -1,0 +1,21 @@
+-----------------------------------
+Application Download Link
+-----------------------------------
+
+Link to download sample application based on Docker:
+
+https://www.mediafire.com/file/3839yw0qfis09wu/zeal-lab-4.zip
+
+-----------------------------------
+Environement Customization Required
+-----------------------------------
+
+Customization Required as Part of the EC2 instance.
+
+i) vsftpd package needs to be installed and service should be running.
+
+ii) A new Linux user named appuser should be created and should be added as part of Linux group named appgroup 
+
+iii) A file needs to be created at /tmp directory with name deployed.txt with following contents:
+
+Sample File deployed .ebextensions
