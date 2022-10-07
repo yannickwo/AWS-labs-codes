@@ -1,0 +1,25 @@
+# Public Instance Details
+
+Step 1: Amazon Machine Image : Amazon Linux 2 AMI (HVM), SSD Volume Type
+Step 2: Instance Type: t2.micro
+Step 3: Configure Instance Details:
+    Network: vpc-us-east-1-test
+    Subnet: Choose a public subnet, e.g. Public-1A or Public-1b
+Step 4/5 - leave defaults
+Step 6 Configure Security Group:
+    Select and existing security group and choose: WebAccess
+Step 7 Review Instance Launch:
+    Create a new key pair and enter name as: custom-vpc-us-east-1 (click download key pair)
+
+# Private Instance Details
+
+Step 1: Amazon Machine Image : Amazon Linux 2 AMI (HVM), SSD Volume Type
+Step 2: Instance Type: t2.micro
+Step 3: Configure Instance Details:
+    Network: vpc-us-east-1-test
+    Subnet: Choose a private subnet, e.g. Private-1A or Private-1b
+Step 4/5 - leave defaults
+Step 6 Configure Security Group:
+    Select and existing security group and choose: WebAccess
+Step 7 Review Instance Launch:
+    Choose an existing key pair and select: custom-vpc-us-east-1
