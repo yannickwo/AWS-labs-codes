@@ -1,21 +1,15 @@
------------------------------------
-Application Download Link
------------------------------------
+This document contains details related to configuring coupon system.
 
-Link to download sample application based on Docker:
+1. Step 1 - Install Web server
 
-https://www.mediafire.com/file/3839yw0qfis09wu/zeal-lab-4.zip
+yum -y install httpd
 
------------------------------------
-Environement Customization Required
------------------------------------
+2. Start HTTPD server
 
-Customization Required as Part of the EC2 instance.
+systemctl start httpd
 
-i) vsftpd package needs to be installed and service should be running.
+Additional Notes:
 
-ii) A new Linux user named appuser should be created and should be added as part of Linux group named appgroup 
+The index.html file provided as part of Lab Assets must be stored at /var/www/html location as part of the delivery pipeline. 
 
-iii) A file needs to be created at /tmp directory with name deployed.txt with following contents:
-
-Sample File deployed .ebextensions
+CodeDeploy configuration should be created accordingly for pipeline automation.
